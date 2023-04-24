@@ -1,0 +1,35 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="knowledge-base-search",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "torch",
+        "transformers",
+        "numpy",
+        "scikit-learn",
+        "spacy",
+        "nltk",
+        "python-dotenv",
+        "openai",
+        "gensim",
+        "openai",
+    ],
+    author="Charaka Abeywickrama",
+    author_email="charaka.abeywickrama@gmail.com",
+    description="A tool to search and retrieve relevant documents from a knowledge base using BERT/MiniLM embedding or a custom search implementation, then generate human-readable answers using OpenAI API.",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/cabeywic/knowledge-base-search",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+    ],
+    python_requires='>=3.6',
+)
