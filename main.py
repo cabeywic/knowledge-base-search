@@ -1,6 +1,12 @@
 from knowledge_base_search.knowledge_base import KnowledgeBase
 from knowledge_base_search.answer_generator import AnswerGenerator
 from knowledge_base_search.search.minilm_search import MiniLMSearch
+import os
+from dotenv import load_dotenv
+
+
+# Load environment variables
+load_dotenv()
 
 # Example search query
 query = "Who is the CEO and the Managing Director?"
@@ -14,7 +20,7 @@ top_documents_bert = knowledge_base_bert.search(query, top_n)
 print(f"Top {top_n} documents for the query using BERTSearch:", top_documents_bert)
 
 # Set your OpenAI API key
-openai_api_key = ""
+openai_api_key = os.environ.get("openai_api_key")
 
 # Create an AnswerGenerator instance
 answer_generator = AnswerGenerator(openai_api_key)
