@@ -21,4 +21,6 @@ class AnswerGenerator:
             temperature=self.temperature,
         )
 
-        return response.choices[0].text.strip()
+        answer = response.choices[0].text.strip()
+        logger.info(f"Generated answer [OpenAI]: {answer}")
+        return answer
