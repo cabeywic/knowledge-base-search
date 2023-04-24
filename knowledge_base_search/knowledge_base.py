@@ -13,11 +13,10 @@ class KnowledgeBase:
 
         search_algorithm_cache_filename = f"{type(search_algorithm).__name__}_search_algorithm.pickle"
         text_processor_cache_filename = "text_processor.pickle"
-        print(os.path.exists(search_algorithm_cache_filename), os.path.exists(text_processor_cache_filename))
 
         if cache and os.path.exists(search_algorithm_cache_filename) and os.path.exists(text_processor_cache_filename):
             os.environ["TOKENIZERS_PARALLELISM"] = "false"
-            
+
             with open(search_algorithm_cache_filename, "rb") as f:
                 self.search_algorithm = pickle.load(f)
 
@@ -34,7 +33,7 @@ class KnowledgeBase:
                 logger.info("Saved text_processor to cache.")
 
             processed_documents = [' '.join(self.text_processor.process_text(doc.content)) for doc in self.documents]
-            print(f"Time to process documents: {time.time() - start_time} seconds")
+            logger.debug(f"Time to process documents: {time.time() - start_time} seconds")
 
             self.search_algorithm = search_algorithm
             self.search_algorithm.index_documents(processed_documents)
@@ -44,7 +43,7 @@ class KnowledgeBase:
                     pickle.dump(self.search_algorithm, f)
                 logger.info("Saved search_algorithm to cache.")
 
-            print(f"Time to index documents: {time.time() - start_time} seconds")
+            logger.debug(f"Time to index documents: {time.time() - start_time} seconds")
             logger.info(f"Set search algorithm to {type(search_algorithm).__name__}.")
 
 
