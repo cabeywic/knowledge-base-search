@@ -10,6 +10,17 @@ This project provides an efficient and scalable solution to search and query a l
 - Caching system to store preprocessed data and search algorithm instances for faster subsequent searches
 - Logging to track search-related information and potential issues
 
+## Methodology
+
+The Knowledge Base Search tool employs a two-step process to find relevant documents and generate human-readable answers:
+
+1. **Semantic Search**: The tool preprocesses and indexes the input documents using advanced NLP techniques like BERT/MiniLM embeddings or a custom search implementation. These embeddings capture the semantic meaning of the text, allowing the search algorithm to find documents that are not just textually similar, but also semantically related to the input query. This approach ensures a more accurate and context-aware selection of relevant documents.
+
+2. **Answer Generation**: After retrieving the most relevant documents, the tool integrates with OpenAI's Chat GPT API to generate human-readable answers based on the provided context. By only sending the relevant context, we can reduce the cost and improve the performance of the API calls, while ensuring that the generated answers are accurate and contextually appropriate.
+
+This methodology is designed to be easily extensible and customizable, allowing users to implement their own search algorithms or NLP models to tailor the solution to their specific use case.
+
+
 ## Installation
 
 To set up the project, follow these steps:
