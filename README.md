@@ -61,6 +61,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+6. Create a `.env` file in the root of your project and add the openai_api_key variable. Replace `<your_api_key>` with your actual API key:
+
+```sh
+openai_api_key=<your_api_key>
+```
+
 ## Usage
 
 1. Add your documents in JSON format to the `data/raw_data/documents.json` file.
