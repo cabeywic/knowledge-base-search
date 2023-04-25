@@ -14,7 +14,7 @@ class AutoSearch(BaseSearchAlgorithm):
 
     def index_documents(self, documents):
         self.indexed_documents = self._embed_documents(documents)
-        logger.info("Indexed documents using BERT.")
+        logger.info(f"Indexed documents using {type(self).__name__}.")
 
     def search(self, query):
         query_embedding = self._embed_text(query).reshape(1, -1)
