@@ -24,7 +24,7 @@ This methodology is designed to be easily extensible and customizable, allowing 
 
 Below is a screenshot of the Streamlit app in action:
 
-![Streamlit App Screenshot](https://i.ibb.co/v15szkZ/Screenshot-2023-04-25-at-11-54-41-am.png)
+![Streamlit App Screenshot](https://i.imgur.com/dsD1sKS.png)
 
 
 ## Installation
