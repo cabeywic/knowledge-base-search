@@ -11,13 +11,15 @@ load_dotenv()
 # Example search query
 query = "Who is the CEO and the Managing Director?"
 
+search_algorithm = MiniLMSearch()
 # Load documents
-knowledge_base_bert = KnowledgeBase(MiniLMSearch(), "data/raw_data/documents.json", cache=True)
+knowledge_base = KnowledgeBase(search_algorithm, "data/raw_data/documents.json", cache=True)
 
 # Search using BERTSearch
 top_n = 2
-top_documents_bert = knowledge_base_bert.search(query, top_n)
-print(f"Top {top_n} documents for the query using BERTSearch:", top_documents_bert)
+top_documents = knowledge_base.search(query, top_n)
+top_document = top_documents[0]
+print(f"Top Document[{type(search_algorithm).__name__}]: ", top_document['content'])
 
 # Set your OpenAI API key
 openai_api_key = os.environ.get("openai_api_key")
@@ -26,6 +28,5 @@ openai_api_key = os.environ.get("openai_api_key")
 answer_generator = AnswerGenerator(openai_api_key)
 
 # Generate an answer using the most relevant document found by BERTSearch
-top_document = top_documents_bert[0]
 answer = answer_generator.generate_answer(query, top_document)
-print("\n\n\nGenerated answer:", answer)
+print("\n\nGenerated answer:", answer)

@@ -39,5 +39,29 @@
     {
         "id": "10",
         "content": "Blue Ocean Robotics is an innovative robotics company that specializes in developing robotic solutions for various industries, including healthcare, agriculture, and manufacturing. Some of their notable products include the UV-Disinfection Robot, which uses ultraviolet light to eliminate viruses and bacteria in hospitals, and the Robotic Seeder, an autonomous farming robot designed to plant seeds with high precision. Blue Ocean Robotics aims to create robots that improve efficiency and productivity while minimizing human exposure to hazardous environments."
-    }
+    },
+    {
+        "id": "11",
+        "content": "Electric Clothing Employee Dress Code Policy: Our dress code policy outlines the appropriate attire for employees during working hours. The dress code is business casual, with an emphasis on comfort and safety. Jeans, khakis, and dress slacks are acceptable, along with blouses, dress shirts, and polos. Closed-toe shoes are required. Employees should refrain from wearing revealing or provocative clothing, ripped or stained garments, or athletic wear."
+    },
+    {
+        "id": "12",
+        "content": "Electric Clothing Sales Guide: Our sales guide provides tips and strategies for employees to maximize sales and customer satisfaction. Techniques include active listening, identifying customer needs, upselling, and cross-selling. To provide excellent customer service, be knowledgeable about our products, offer personalized recommendations, and maintain a positive attitude. Always follow up with customers after their purchase to ensure satisfaction and address any concerns."
+    },
+    {
+        "id": "13",
+        "content": "Electric Clothing Product Care Guide: This guide covers proper care and maintenance for our electric clothing products. To ensure the longevity of the garments, follow these steps: 1. Hand wash or use the gentle cycle in a washing machine with cold water. 2. Do not use bleach or harsh detergents. 3. Lay flat to air dry. Do not use a tumble dryer. 4. Avoid ironing or using heat on the fabric. 5. Disconnect and remove any electrical components before washing."
+    },
+    {
+        "id": "14",
+        "content": "Electric Clothing Inventory Management Guide: This comprehensive guide outlines the best practices for managing inventory at Electric Clothing. 1. Conduct regular inventory checks: Schedule physical inventory counts periodically to ensure your records are accurate. 2. Maintain accurate records: Keep detailed records of all stock movements, including sales, purchases, and returns. 3. Use an inventory management system: Implement a reliable inventory management software to track stock levels, sales trends, and reorder points. 4. Monitor stock levels: Pay close attention to stock levels and adjust reordering quantities and frequencies accordingly. 5. Manage storage and organization: Organize your warehouse/storage area efficiently to make it easy to locate items and optimize the use of space. 6. Track slow-moving items: Identify slow-moving products and consider promotions or discounts to clear excess stock. 7. Coordinate with suppliers: Establish strong relationships with suppliers to ensure timely deliveries and handle any supply chain issues. Efficient inventory management helps prevent stockouts, overstocking, and improves cash flow."
+    },
+    {
+        "id": "15",
+        "content": "Electric Clothing Workplace Safety Guide: Our workplace safety guide emphasizes the importance of maintaining a safe working environment for all employees. Key safety measures include proper training, hazard identification, use of personal protective equipment (PPE), and adherence to safety regulations. Encourage employees to report any safety concerns or incidents promptly. Regular safety inspections and drills should be conducted to ensure preparedness and compliance."
+    },
+    {
+        "id": "16",
+        "content": "Electric Clothing Customer Returns and Refunds Guide: This guide outlines the steps and best practices for handling customer returns and refunds at Electric Clothing. 1. Establish a clear return policy: Communicate the return policy clearly to customers, including timeframes, eligible items, and required documentation. 2. Train employees on the return process: Ensure employees are familiar with the return process, including inspection of returned items, restocking procedures, and refund processing. 3. Offer multiple return options: Provide customers with various return methods, such as in-store, mail-in, or pickup services. 4. Inspect returned items: Check returned items for defects or damage, and categorize them accordingly for restocking, repair, or disposal. 5. Process refunds promptly: Process refunds quickly and efficiently to maintain customer satisfaction. Offer different refund options, such as store credit, exchanges, or original payment method refunds. 6. Monitor return trends: Analyze return data to identify trends and potential areas of improvement in product quality, shipping, or customer service. 7. Encourage customer feedback: Solicit feedback from customers about their return experience to identify opportunities for improvement and enhance customer satisfaction."
+      }
 ]
