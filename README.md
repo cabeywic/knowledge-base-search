@@ -81,6 +81,28 @@ python main.py
 
 This will load the documents, preprocess them, and index them using the specified search algorithm (e.g., BERT). Then, it will search for relevant documents based on your query and return the top matching results.
 
+## Running the Streamlit App
+
+To run the Streamlit app, follow these steps:
+
+1. Ensure you have Streamlit installed. If not, you can install it using the following command:
+```bash
+pip install streamlit
+```
+
+2. Create and add environment variables to the secrets.toml file
+```bash
+mkdir .streamlit
+touch .streamlit/secrets.toml
+```
+
+3. Navigate to the project directory and run the Streamlit app with this command:
+```bash
+streamlit run app.py
+```
+
+4. The app will open in a new browser tab. You can now enter your query and view the results.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to open issues or submit pull requests to improve the project.
