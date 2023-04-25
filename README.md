@@ -20,6 +20,12 @@ The Knowledge Base Search tool employs a two-step process to find relevant docum
 
 This methodology is designed to be easily extensible and customizable, allowing users to implement their own search algorithms or NLP models to tailor the solution to their specific use case.
 
+## Screenshot
+
+Below is a screenshot of the Streamlit app in action:
+
+![Streamlit App Screenshot](https://i.ibb.co/v15szkZ/Screenshot-2023-04-25-at-11-54-41-am.png)
+
 
 ## Installation
 
